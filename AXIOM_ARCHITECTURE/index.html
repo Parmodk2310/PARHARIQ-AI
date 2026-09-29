@@ -1,0 +1,1019 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://parmodk2310.github.io/PARHARIQ-AI/AXIOM_ARCHITECTURE/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>AXIOM Portfolio Intelligence — System Architecture - PARHARIQ AI Legal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#axiom-portfolio-intelligence-system-architecture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PARHARIQ AI Legal" class="md-header__button md-logo" aria-label="PARHARIQ AI Legal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PARHARIQ AI Legal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AXIOM Portfolio Intelligence — System Architecture
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../legal/privacy-policy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../legal/terms-of-service/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Terms of Service
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../legal/account-deletion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Account Deletion
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PARHARIQ AI Legal" class="md-nav__button md-logo" aria-label="PARHARIQ AI Legal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PARHARIQ AI Legal
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/privacy-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/terms-of-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/account-deletion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account Deletion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture goals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-logical-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High-level logical architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-analysis-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main analysis sequence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component responsibilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#streamlit-experience-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streamlit experience layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#market-data-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Market-data layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#news-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        News layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finbert-sentiment-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FinBERT sentiment layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portfolio-optimization-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Portfolio optimization layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faiss-and-rag-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAISS and RAG layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistence-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistence layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployed-aws-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployed AWS architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployed AWS architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-operational-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current operational characteristics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacity-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capacity lesson
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-fastapi-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional FastAPI architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#failure-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failure behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Production evolution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architectural principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="axiom-portfolio-intelligence-system-architecture">AXIOM Portfolio Intelligence — System Architecture<a class="headerlink" href="#axiom-portfolio-intelligence-system-architecture" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><strong>AXIOM Portfolio Intelligence</strong> is the customer-facing product name. The GitHub repository is <strong>AXIOM-Portfolio-Intelligence</strong>.</p>
+<p>AXIOM combines market-price analytics, adaptive Modern Portfolio Theory, financial-news sentiment, risk analysis, FAISS retrieval, and Groq-generated explanations in one Streamlit workflow. The verified public deployment runs the Streamlit service directly in Docker on AWS EC2. FastAPI is an optional interface rather than a mandatory hop in the deployed request path.</p>
+<h2 id="architecture-goals">Architecture goals<a class="headerlink" href="#architecture-goals" title="Permanent link">&para;</a></h2>
+<ul>
+<li>provide an explainable portfolio-research workflow</li>
+<li>keep quantitative results usable when optional AI services fail</li>
+<li>persist users, holdings, and analysis history across container recreation</li>
+<li>expose assumptions, risk, news, and generated recommendations together</li>
+<li>support local Python, Docker, and AWS EC2 environments</li>
+<li>keep components replaceable for future managed-service migration</li>
+</ul>
+<h2 id="high-level-logical-architecture">High-level logical architecture<a class="headerlink" href="#high-level-logical-architecture" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flowchart TB
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    U["User browser"] --&gt; S["Streamlit experience"]
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    S --&gt; D["Market data and news"]
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    S --&gt; A["FinBERT · FAISS · Groq"]
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    S --&gt; Q["Optimization and risk"]
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    D --&gt; O["SQLite · FAISS · HTML report"]
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    A --&gt; O
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    Q --&gt; O
+</code></pre></div>
+<h2 id="main-analysis-sequence">Main analysis sequence<a class="headerlink" href="#main-analysis-sequence" title="Permanent link">&para;</a></h2>
+<ol>
+<li>The user selects a stored portfolio and starts analysis.</li>
+<li>The application fetches approximately one year of price history.</li>
+<li>Prices are aligned by date and converted into daily returns.</li>
+<li>The optimizer builds an equal-weight baseline and candidate efficient frontier.</li>
+<li>Recent news is fetched per ticker when a valid NewsAPI key is configured.</li>
+<li>FinBERT produces article-level and aggregated sentiment scores.</li>
+<li>The adaptive layer evaluates quantitative quality, sentiment coverage, risk, alpha, and concentration constraints.</li>
+<li>The selected allocation is passed to the risk analyzer.</li>
+<li>FAISS retrieves relevant context for each ticker.</li>
+<li>LangChain and Groq produce concise recommendation narratives when enabled.</li>
+<li>Results are stored in SQLite and rendered as charts, risk gauges, headlines, and recommendations.</li>
+<li>The report generator creates a self-contained HTML report.</li>
+</ol>
+<h2 id="component-responsibilities">Component responsibilities<a class="headerlink" href="#component-responsibilities" title="Permanent link">&para;</a></h2>
+<h3 id="streamlit-experience-layer">Streamlit experience layer<a class="headerlink" href="#streamlit-experience-layer" title="Permanent link">&para;</a></h3>
+<p>The <code>frontend/</code> package provides:</p>
+<ul>
+<li>login and registration workflows</li>
+<li>portfolio and holdings management</li>
+<li>analysis controls and orchestration</li>
+<li>allocation and efficient-frontier charts</li>
+<li>risk metrics and gauges</li>
+<li>correlation and volatility views</li>
+<li>FinBERT sentiment and recent headlines</li>
+<li>AI recommendation presentation</li>
+<li>saved-run history</li>
+<li>benchmark/compare workflow</li>
+<li>downloadable HTML reports</li>
+</ul>
+<p>Streamlit session state coordinates the current user and analysis workflow. Durable data must be stored in SQLite rather than relying only on session state.</p>
+<p>Local identities are stored with bcrypt password hashes. Accounts created by an
+older build may contain SHA-256 hashes; these are accepted once and upgraded to
+bcrypt after a successful login. Password hashes are never returned in user
+records. The former username-and-email-only password reset is disabled because
+it did not prove control of the email account.</p>
+<h3 id="market-data-layer">Market-data layer<a class="headerlink" href="#market-data-layer" title="Permanent link">&para;</a></h3>
+<p>The market-data modules under <code>src/data/</code> are responsible for:</p>
+<ul>
+<li>downloading price history with <code>yfinance</code></li>
+<li>normalizing ticker symbols and company names</li>
+<li>aligning assets by trading date</li>
+<li>computing daily returns with explicit missing-value handling</li>
+<li>returning clear failures for invalid or insufficient data</li>
+</ul>
+<p>Adjusted prices should be used consistently so splits and distributions do not create false return jumps.</p>
+<h3 id="news-layer">News layer<a class="headerlink" href="#news-layer" title="Permanent link">&para;</a></h3>
+<p>The NewsAPI integration:</p>
+<ul>
+<li>builds a ticker/company query</li>
+<li>requests recent English-language financial news</li>
+<li>normalizes article metadata</li>
+<li>deduplicates headlines or URLs</li>
+<li>exposes provider failures without stopping quantitative analysis</li>
+</ul>
+<p>API keys must be validated for presence and format. A value containing multiple comma-separated keys is invalid and can produce HTTP <code>401</code> responses.</p>
+<h3 id="finbert-sentiment-layer">FinBERT sentiment layer<a class="headerlink" href="#finbert-sentiment-layer" title="Permanent link">&para;</a></h3>
+<p>FinBERT classifies financial text as positive, negative, or neutral. The application aggregates article-level scores into a ticker-level signal.</p>
+<p>Important limitations:</p>
+<ul>
+<li>confidence is not automatically calibrated probability</li>
+<li>duplicate or sensational headlines can dominate aggregation</li>
+<li>coverage differs across companies</li>
+<li>missing news is not evidence of neutral sentiment</li>
+<li>inference can be slow during CPU cold start</li>
+</ul>
+<h3 id="portfolio-optimization-layer">Portfolio optimization layer<a class="headerlink" href="#portfolio-optimization-layer" title="Permanent link">&para;</a></h3>
+<p>For weights <code>w</code>, expected returns <code>mu</code>, and covariance <code>Sigma</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Expected return = w.T @ mu
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Variance        = w.T @ Sigma @ w
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Sharpe ratio    = (expected return - risk-free rate) / volatility
+</code></pre></div>
+<p>The optimizer applies full-investment and no-short/concentration constraints. AXIOM also evaluates an equal-weight baseline and adaptive blend settings rather than displaying one unexplained weight vector. The repository includes a leakage-aware walk-forward evaluation with drift-adjusted turnover, complete traded notional, transaction costs, and separate gross and net NAV.</p>
+<p>MPT outputs are sensitive to historical estimates. Recommended future improvements include covariance shrinkage, explicit turnover-constrained optimization, robust covariance estimation, broader out-of-sample universes, and more extensive capacity/stress testing.</p>
+<h3 id="risk-layer">Risk layer<a class="headerlink" href="#risk-layer" title="Permanent link">&para;</a></h3>
+<p>The risk analyzer calculates or presents:</p>
+<ul>
+<li>annualized volatility</li>
+<li>95% and 99% Value at Risk</li>
+<li>maximum drawdown</li>
+<li>Sharpe ratio</li>
+<li>correlation matrix</li>
+<li>per-ticker volatility</li>
+<li>concentration diagnostics</li>
+</ul>
+<p>No single metric fully describes risk. VaR does not measure losses beyond its threshold, and volatility treats upside and downside movement similarly.</p>
+<h3 id="faiss-and-rag-layer">FAISS and RAG layer<a class="headerlink" href="#faiss-and-rag-layer" title="Permanent link">&para;</a></h3>
+<p>FAISS stores and searches embedded financial context. The RAG pipeline combines retrieved articles with sentiment, allocation, and risk information before calling Groq through LangChain.</p>
+<p>The current default model is configured through:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GROQ_MODEL=openai/gpt-oss-120b
+</code></pre></div>
+<p>RAG improves grounding but does not prevent hallucination. Retrieved news is untrusted input and must be delimited, escaped in reports, and prevented from controlling tools or system instructions.</p>
+<h3 id="persistence-layer">Persistence layer<a class="headerlink" href="#persistence-layer" title="Permanent link">&para;</a></h3>
+<p>The current SQLite schema includes the following main entities:</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>users</code></td>
+<td>Local application identities</td>
+</tr>
+<tr>
+<td><code>portfolios</code></td>
+<td>User-owned portfolio metadata</td>
+</tr>
+<tr>
+<td><code>holdings</code></td>
+<td>Tickers, quantity, price, currency, and purchase date</td>
+</tr>
+<tr>
+<td><code>optimization_runs</code></td>
+<td>Stored metrics, weights, sentiment, recommendations, and risk output</td>
+</tr>
+</tbody>
+</table>
+<p>The container uses:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>DB_DIR=/data
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>FAISS_INDEX_PATH=/data/faiss_index
+</code></pre></div>
+<p>Docker mounts a named volume at <code>/data</code>, allowing SQLite and FAISS data to survive container recreation.</p>
+<h2 id="deployed-aws-architecture">Deployed AWS architecture<a class="headerlink" href="#deployed-aws-architecture" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>flowchart TB
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    G["GitHub Actions"] --&gt; I["IAM OIDC role"]
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    I --&gt; E["Amazon ECR · SHA image"]
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    E --&gt; M["Systems Manager"]
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    M --&gt; C["Docker on EC2"]
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    U["Allowed user"] --&gt; C
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    C --&gt; V["Persistent /data volume"]
+</code></pre></div>
+<p>Infrastructure is provisioned by <code>deploy/aws/ec2-stack.yaml</code>. The CloudFormation stack name is <code>portfolio-optimizer</code>; this technical name does not need to match the product brand.</p>
+<h3 id="current-operational-characteristics">Current operational characteristics<a class="headerlink" href="#current-operational-characteristics" title="Permanent link">&para;</a></h3>
+<ul>
+<li>single EC2 host</li>
+<li>single Streamlit container</li>
+<li>persistent Docker volume</li>
+<li>HTTP access on port <code>8501</code></li>
+<li>security-group access restricted by <code>AllowedCidr</code></li>
+<li>bootstrap log at <code>/var/log/portfolio-bootstrap.log</code></li>
+<li>container health endpoint at <code>/_stcore/health</code></li>
+<li>CI-built ECR images tagged with the full Git commit SHA</li>
+<li>GitHub Actions authentication through IAM OIDC rather than static AWS keys</li>
+<li>remote deployment through Systems Manager rather than CI-managed SSH keys</li>
+<li>automatic application-image restoration when the new container fails health</li>
+</ul>
+<h3 id="capacity-lesson">Capacity lesson<a class="headerlink" href="#capacity-lesson" title="Permanent link">&para;</a></h3>
+<p>A <code>t3.micro</code> instance experienced resource pressure and SSH banner timeouts during model/container workloads. <code>t3.small</code> improved stability, but FinBERT cold starts can still be resource intensive. Monitor memory, swap, CPU, disk, and container restart counts.</p>
+<h2 id="optional-fastapi-architecture">Optional FastAPI architecture<a class="headerlink" href="#optional-fastapi-architecture" title="Permanent link">&para;</a></h2>
+<p>When the API profile is enabled, FastAPI can provide a programmatic interface:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>API client → FastAPI :8000 → shared src modules → SQLite/external providers
+</code></pre></div>
+<p>The public Streamlit deployment should not be documented as requiring this API unless the compose file and runtime actually route Streamlit through it. Generated OpenAPI documentation is the authoritative route contract.</p>
+<p>FastAPI uses bearer JWTs signed by the required <code>SECRET_KEY</code>. Token subjects are
+resolved against the current database user on every protected request. Portfolio
+lookups and mutations are scoped by both resource ID and authenticated user ID;
+an inaccessible resource returns <code>404</code> to avoid disclosing another user's data.
+Browser origins are restricted through <code>CORS_ORIGINS</code> rather than a wildcard.</p>
+<h2 id="failure-behavior">Failure behavior<a class="headerlink" href="#failure-behavior" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>Expected behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Invalid ticker</td>
+<td>Exclude with warning or stop before optimization</td>
+</tr>
+<tr>
+<td>NewsAPI unavailable</td>
+<td>Continue quantitative analysis without fresh sentiment</td>
+</tr>
+<tr>
+<td>FinBERT unavailable</td>
+<td>Continue with quantitative-only results</td>
+</tr>
+<tr>
+<td>FAISS unavailable</td>
+<td>Skip retrieval and do not claim grounded generation</td>
+</tr>
+<tr>
+<td>Groq unavailable</td>
+<td>Show deterministic fallback; preserve risk/weight outputs</td>
+</tr>
+<tr>
+<td>SQLite write failure</td>
+<td>Surface the error; do not claim the run was saved</td>
+</tr>
+<tr>
+<td>EC2 resource pressure</td>
+<td>Health alert, inspect logs/metrics, resize or optimize</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security-boundaries">Security boundaries<a class="headerlink" href="#security-boundaries" title="Permanent link">&para;</a></h2>
+<ul>
+<li>browser to Streamlit</li>
+<li>Streamlit/container to external market, news, and LLM providers</li>
+<li>container to SQLite/FAISS volume</li>
+<li>administrator to EC2 through SSH</li>
+<li>CI/deployment identity to AWS</li>
+</ul>
+<p>Use TLS, least-privilege IAM, managed secrets, rate limits, output escaping, and structured logs. Passwords currently use bcrypt, and legacy SHA-256 hashes are upgraded after successful authentication.</p>
+<h2 id="production-evolution">Production evolution<a class="headerlink" href="#production-evolution" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Current design</th>
+<th>Recommended evolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public HTTP and changing EC2 IP</td>
+<td>Domain, Elastic IP where appropriate, and HTTPS</td>
+</tr>
+<tr>
+<td><code>.env</code> secrets</td>
+<td>AWS Secrets Manager or SSM with IAM roles</td>
+</tr>
+<tr>
+<td>Single EC2</td>
+<td>Load-balanced managed container service or autoscaling group</td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>RDS PostgreSQL with migrations and backups</td>
+</tr>
+<tr>
+<td>Local FAISS</td>
+<td>Versioned shared vector storage or managed vector service</td>
+</tr>
+<tr>
+<td>Manual logs</td>
+<td>CloudWatch metrics, logs, traces, dashboards, and alarms</td>
+</tr>
+<tr>
+<td>ECR image rollback</td>
+<td>Add a separately auditable operator-selected rollback workflow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="architectural-principles">Architectural principles<a class="headerlink" href="#architectural-principles" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Quantitative results should survive optional AI-provider failure.</li>
+<li>Historical runs should preserve the assumptions and evidence used to create them.</li>
+<li>Product branding should remain separate from infrastructure identifiers.</li>
+<li>Generated recommendations should be treated as explanations, not trade commands.</li>
+<li>Claims in documentation must be reproducible from committed code and stored artifacts.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 PARHARIQ AI — Portfolio Intelligence.
+Built by Parmod (Parmod + Pawan + HariRam + Q).
+Dighal, Jhajjar, Haryana, India.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Parmodk2310/PARHARIQ-AI" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/parmodk2310" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
