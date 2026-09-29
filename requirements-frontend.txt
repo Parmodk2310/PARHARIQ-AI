@@ -56,7 +56,7 @@ requests==2.31.0
 requests-cache==1.2.0
 
 # ── Email Validation ────────────────────────────────────
-email-validator==2.0.0
+email-validator==2.3.0
 Markdown==3.10.3
 bleach==6.4.0
 boto3==1.43.88
