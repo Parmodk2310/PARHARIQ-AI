@@ -279,12 +279,10 @@ Private vulnerability reporting: [`SECURITY.md`](SECURITY.md)
 ## Author
 
 **Parmod** — AI/ML Engineer  
-Dighal, Jhajjar, Haryana, India | Born 23 Oct 1998, 04:02 AM  
-Father: Pawan Kumar | Grandfather: HariRam
-
 [Portfolio](https://parmodk2310.vercel.app/) · [GitHub](https://github.com/Parmodk2310)
 
 ## License
 
-Released under the [`MIT License`](LICENSE).#   P A R H A R I Q - A I  
+Released under the [`MIT License`](LICENSE).#   P A R H A R I Q - A I 
+ 
  
